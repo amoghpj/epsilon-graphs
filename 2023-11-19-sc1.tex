@@ -1,4 +1,4 @@
-% Created 2023-11-19 Sun 08:41
+% Created 2023-11-19 Sun 08:47
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -17,9 +17,15 @@
 \usepackage{xcolor}
 \definecolor{bg}{rgb}{0.9,0.9,0.9}
 \usepackage[bottom=0.5in,margin=1in]{geometry}
+
+%%% Leave comments using the syntax \sushrut{your comment here}
+\newcommand{\amogh}[1]{{\textsc{\color{blue} AJ:#1}}}
+\newcommand{\todo}{{\color{red}{\small TODO\ }}}}
+\newcommand{\sushrut}[1]{{\textsc{\color{green}SK:#1}}}
+
 \author{Amogh Prabhav Jalihal and Sushrut Karmalkar}
 \date{\today}
-\title{\(\epsilon\)-graphs reveal the presence of intermediate cell states on the Waddington landscape scRNAseq datasets}
+\title{\amogh{wip} The presence of intermediate cell states in scRNAseq data obscure the identification of `Waddington' attractors }
 \hypersetup{
  pdfauthor={Amogh Prabhav Jalihal and Sushrut Karmalkar},
  pdftitle={\(\epsilon\)-graphs reveal the presence of intermediate cell states on the Waddington landscape scRNAseq datasets},
@@ -30,14 +36,31 @@
 \begin{document}
 
 \maketitle
-\tableofcontents
+\section*{Outline}
+Sequence of arguments:
+\begin{itemize}
+\item \todo Small discussion summarizing the Deeds preprint
+\item \todo Show that the expectations of plateaus in the $\epsilon$-graphs from clustered data is not generally true
+\item \todo Do a simulation to show that there is some kind of a transition from having plateaus to having a smooth sigmoidal curve as the space between the clusters starts to get filled up with intermediate cell states
+\item \todo \amogh{For sush} Point out that as along as there exists an $\epsilon$-path in this graph, the GCC trend will not show the expected plateau.
+\item \todo Do a slightly more thorough search to find \textsc{MINCUT} like ideas for identifying cell clusters
+\end{itemize}
 
-\section{Introduction}
-\label{sec:org5e88046}
-\section{Results}
-\label{sec:org7164ab1}
-\section{Discussion}
-\label{sec:org6b7146d}
-\section{Methods}
-\label{sec:org233c45e}
+
+ 
+\section*{Introduction}
+\label{sec:orgc8a6b0e}
+\section*{Results}
+\label{sec:org8da0183}
+\section*{Discussion}
+\label{sec:org4e03e49}
+
+\section*{Methods}
+\label{sec:org7a0bf76}
+\bibliographystyle{plain}
+\bibliography{../../../projects/references}
 \end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
