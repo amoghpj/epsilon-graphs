@@ -1,0 +1,12 @@
+data/*
+img/*
+src/epsilongraphs/*
+*.log
+*.blg
+*.bbl
+*.aux
+*.pdf
+*.out
+tmp/
+auto/*
+*synctex*
